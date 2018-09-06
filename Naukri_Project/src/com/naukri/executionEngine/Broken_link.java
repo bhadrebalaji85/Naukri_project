@@ -30,7 +30,7 @@ public class Broken_link {
 	@Test
 	  public void beforeMethod() throws MalformedURLException, IOException {
 		WebDriver driver =new ChromeDriver();
-		driver.get("https://www.naukri.com/");
+		driver.get("http://m.molinahealthcare.com/id/en/pages/home.aspx");
 		driver.manage().window().maximize();
 		String home_page = driver.getWindowHandle();
 		System.out.println(home_page);
@@ -57,10 +57,11 @@ public class Broken_link {
 	     try{
 	    	 
 	     
-	    	 for(int i=1;i<=linkedlist.size();i++)
+	    	 for(int i=1;i<linkedlist.size();i++)
 	    	 
 	    	 	{
-	    	 if(linkedlist.get(i).getAttribute("href")!=null)
+	    		 String href=linkedlist.get(i).getAttribute("href");
+	    	 if((href != null) && !href.startsWith("javascript"))
 	    	   	{
 	    		 activelink.add(linkedlist.get(i));
 	    	     // System.out.println("Active link is:"+activelink.get(i).getText());
@@ -76,7 +77,7 @@ public class Broken_link {
 		
 	     System.out.println("Number of active links:"+activelink.size());
 	     
-	     for(int j=1;j<=activelink.size();j++)
+	     for(int j=1;j<activelink.size();j++)
 	     {
 	    	 HttpURLConnection con=(HttpURLConnection)new URL(activelink.get(j).getAttribute("href")).openConnection();
 	    	 
@@ -85,10 +86,6 @@ public class Broken_link {
             String response=con.getResponseMessage();
             con.disconnect();
             System.out.println(activelink.get(j).getAttribute("href")+ " Response is:"+response+" response code:"+code);
-	    	 
-	    	 
-	    	 
-	    	 
 	    	 
 	     }
 	     
