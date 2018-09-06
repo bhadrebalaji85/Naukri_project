@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55834" started-at="2018-03-21T17:43:11Z" finished-at="2018-03-21T17:44:07Z">
+  <suite name="Default suite" duration-ms="60608" started-at="2018-09-06T17:25:46Z" finished-at="2018-09-06T17:26:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55834" started-at="2018-03-21T17:43:11Z" finished-at="2018-03-21T17:44:07Z">
-      <class name="com.naukri.executionEngine.Dropdown">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.naukri.executionEngine.Dropdown@2fc14f68]" name="login" duration-ms="55730" started-at="2018-03-21T23:13:11Z" finished-at="2018-03-21T23:14:07Z">
+    <test name="Default test" duration-ms="60608" started-at="2018-09-06T17:25:46Z" finished-at="2018-09-06T17:26:47Z">
+      <class name="com.naukri.executionEngine.Broken_link">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.naukri.executionEngine.Broken_link@73035e27]" name="beforeMethod" duration-ms="60573" started-at="2018-09-06T22:55:46Z" finished-at="2018-09-06T22:56:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.naukri.executionEngine.Dropdown@2fc14f68]" name="teardown" is-config="true" duration-ms="80" started-at="2018-03-21T23:14:07Z" finished-at="2018-03-21T23:14:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.naukri.executionEngine.Dropdown -->
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.naukri.executionEngine.Broken_link -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

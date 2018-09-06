@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.naukri.executionEngine.Dropdown">
+      <class name="com.naukri.executionEngine.Broken_link">
         <methods>
-          <include name="login"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.naukri.executionEngine.Dropdown -->
+      </class> <!-- com.naukri.executionEngine.Broken_link -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
